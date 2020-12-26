@@ -1,0 +1,6 @@
+#!/bin/bash
+source ~/.config/goblocks/colors
+
+var=$(date +%I:%M%p)
+
+echo "<span color='$timeIconColor'> $timeIcon </span><span color='$timeTextColor' font_desc='$fontDesc'>$var </span>"

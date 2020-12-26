@@ -1,0 +1,37 @@
+{
+    "separator": "|",
+    "actions": 
+    [
+        {
+            "updateSignal": "34",
+            "command": "~/.config/goblocks/cpu/cpu",
+            "timer": "3s"
+        },
+        {
+            "updateSignal": "34",
+            "command": "~/.config/goblocks/memory/memory",
+            "timer": "15s"
+        },
+        {
+            "updateSignal": "34",
+            "command": "~/.config/goblocks/date/date",
+            "timer": "15s"
+        },
+        {
+            "updateSignal": "34",
+            "command": "~/.config/goblocks/time/time",
+            "timer": "15s"
+        },
+        {
+            "updateSignal": "36",
+            "command": "~/.config/goblocks/volume/volume",
+            "timer": "0s"
+        },
+        {
+            "updateSignal": "37",
+            "command": "echo ''",
+            "timer": "0s"
+        }
+    ]
+
+}

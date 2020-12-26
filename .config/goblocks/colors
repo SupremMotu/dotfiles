@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+#cpu block colors'
+cpuIcon="" #""
+cpuIconColor="#61A0FF"
+cpuTextColor="#BBBBBB"
+
+#memory block colors
+memoryIcon=""
+memoryIconColor="#61A0FF"
+memoryTextColor="#BBBBBB"
+
+#time block colors
+timeIcon=""
+timeIconColor="#61A0FF"
+timeTextColor="#BBBBBB"
+
+#date block colors
+dateIcon=""
+dateIconColor="#61A0FF"
+dateTextColor="#BBBBBB"
+
+#volume block colors Wouldn't take using this file for config for icon so edit volume-pulseaudio2 script to change color
+volumeTextColor="#BBBBBB"
+
+#spotify block colors
+spotifyIcon=""
+spotifyIconColor="#61A0FF"
+spotifyTextColor="#BBBBBB"

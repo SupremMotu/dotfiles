@@ -1,0 +1,6 @@
+#!/bin/bash
+source ~/.config/goblocks/colors
+
+var=`python3 ~/.config/goblocks/spotify/spotify2`
+
+echo "<span color='$spotifyIconColor'> $spotifyIcon</span><span color='$spotifyTextColor' font_desc='$fontDesc'> $var </span>"

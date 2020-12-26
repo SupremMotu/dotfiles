@@ -1,0 +1,7 @@
+#!/bin/bash
+source ~/.config/goblocks/colors
+
+var=`~/.config/goblocks/volume/volume2`
+string="${var//  /}"
+
+echo "<span color='$volumeTextColor' font_desc='$fontDesc'> $string</span>"
