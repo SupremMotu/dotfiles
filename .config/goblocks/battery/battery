@@ -1,0 +1,4 @@
+source ~/.config/goblocks/colors
+var=`python3 ~/.config/goblocks/goblocks-contrib/battery2/battery`
+
+echo "<span color='$batteryTextColor' font_desc='$fontDesc'> $var </span>"

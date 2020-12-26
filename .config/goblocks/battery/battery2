@@ -1,0 +1,5 @@
+#!/bin/bash
+CURRENT=$(</sys/class/power_supply/BAT0/charge_now)
+FULL=$(</sys/class/power_supply/BAT0/charge_full)
+
+echo "$((100 * CURRENT / FULL))%"
