@@ -27,6 +27,11 @@ highVolumeIcon=""
 volumeIconColor="#61A0FF"
 volumeTextColor="#BBBBBB"
 
+#battery block colors
+batteryIcon=""
+batteryIconColor="#61A0FF"
+batteryTextColor="#BBBBBB"
+
 #spotify block colors
 spotifyIcon=""
 spotifyIconColor="#61A0FF"

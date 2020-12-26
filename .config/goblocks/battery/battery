@@ -1,4 +1,16 @@
+#!/bin/bash
 source ~/.config/goblocks/colors
-var=`python3 ~/.config/goblocks/goblocks-contrib/battery2/battery`
 
-echo "<span color='$batteryTextColor' font_desc='$fontDesc'> $var </span>"
+NOW=$(</sys/class/power_supply/BAT0/charge_now)
+FULL=$(</sys/class/power_supply/BAT0/charge_full)
+STATUS=$(</sys/class/power_supply/BAT0/status)
+
+var=$((100 * NOW / FULL))
+
+if [ $STATUS == "Charging" ]; then
+    icon="$chargingIcon" && iconColor="$chargingIconColor"
+else
+    icon="$batteryIcon" && iconColor="$batteryIconColor"
+fi
+
+echo "<span color='$iconColor'> $icon</span><span color='$batteryTextColor' font_desc='$fontDesc'> $var% </span>"
