@@ -1,7 +1,18 @@
-#!/bin/bash
+#!/bin/sh
+
+# Prints the current volume or  if muted.
+
 source ~/.config/goblocks/colors
 
-var=`~/.config/goblocks/volume/volume2`
-string="${var//  /}"
+percent="$(awk -F"[][]" '/Left:/ { print $2 }' <(amixer sget Master))"
+vol=${percent%\%}
 
-echo "<span color='$volumeTextColor' font_desc='$fontDesc'> $string</span>"
+if  [ $(awk -F"[][]" '/Left:/ { print $4 }' <(amixer sget Master)) == "off" ]; then
+    icon="$muteVolumeIcon "
+elif [ "$vol" -ge "50" ]; then
+    icon="$highVolumeIcon "
+else
+    icon="$lowVolumeIcon "
+fi
+
+echo "<span color='$volumeIconColor'> $icon</span><span color='$volumeTextColor' font_desc='$fontDesc'>$vol% </span>"

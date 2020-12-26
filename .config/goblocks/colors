@@ -21,6 +21,10 @@ dateIconColor="#61A0FF"
 dateTextColor="#BBBBBB"
 
 #volume block colors Wouldn't take using this file for config for icon so edit volume-pulseaudio2 script to change color
+muteVolumeIcon=""
+lowVolumeIcon=""
+highVolumeIcon=""
+volumeIconColor="#61A0FF"
 volumeTextColor="#BBBBBB"
 
 #spotify block colors
