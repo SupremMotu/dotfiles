@@ -1,0 +1,5 @@
+#/bin/sh
+
+# Confirm dwm exit with dmenu
+
+[ "$(echo -e "No\nYes" | dmenu -i -fn 'Noto Sans-10' -p "Are you sure you want to log out of dwm?" -sb "#61a0ff" -nb "#4B4B4C" -nf "#D3D3D3" -sf white )" = "Yes" ] && $(killall dwm)
